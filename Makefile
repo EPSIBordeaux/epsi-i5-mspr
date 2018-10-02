@@ -7,5 +7,5 @@ build:
 	makeglossaries ${filename}
 
 clean:
-	rm -f ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg}
+	rm -f ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg,glg,glo,gls,ist,lof,lol,lot,synctex.gz,tdo,toc}
 
