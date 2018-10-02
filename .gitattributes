@@ -1,0 +1,29 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Common Windows files
+*.txt eol=lf
+*.TXT eol=lf
+*.bat eol=lf
+*.BAT eol=lf
+*.cmd eol=lf
+*.CMD eol=lf
+# Might contain binary data but should try to be displayed as text...
+*.csv -text
+*.CSV -text
+# Reg files are UTF-16 and this might cause problems...
+*.reg binary
+*.REG binary
+
+# Common Linux files
+*.sh eol=lf
+Makefile eol=lf
+
+# LaTeX
+*.tex eol=lf
+*.TEX eol=lf
+*.bib eol=lf
+*.BIB eol=lf
+*.lyx eol=lf
+*.LYX eol=lf
+
