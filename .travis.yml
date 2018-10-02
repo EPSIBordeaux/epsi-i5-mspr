@@ -2,7 +2,5 @@ sudo: required
 dist: trusty # Ubuntu 14.04
 services: docker # Enables docker
 script:
-- wget https://raw.githubusercontent.com/blang/latex-docker/master/latexdockercmd.sh
-- chmod +x latexdockercmd.sh
-- ./latexdockercmd.sh lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error main.tex && makeglossaries main && lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error main.tex
+- docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v "$PWD":/data latex:ctanfull /bin/sh -c "lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error main.tex && makeglossaries main && lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error main.tex"
 
