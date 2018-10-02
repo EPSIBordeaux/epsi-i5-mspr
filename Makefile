@@ -3,7 +3,7 @@
 filename=main
 
 build:
-	lualatex --shell-escape -synctex=1 -interaction=nonstopmode ${filename}.tex
+	lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error ${filename}.tex
 	makeglossaries ${filename}
 
 clean:
