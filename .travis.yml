@@ -1,6 +1,8 @@
 sudo: required
-dist: trusty
-before_install:
-- sudo apt-get -qq update && sudo apt-get install -y texlive-full
+dist: trusty # Ubuntu 14.04
+services: docker # Enables docker
 script:
-- make
+- wget https://raw.githubusercontent.com/blang/latex-docker/master/latexdockercmd.sh
+- chmod +x latexdockercmd.sh
+- ./latexdockercmd.sh lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error main.tex && makeglossaries main && lualatex --shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error main.tex
+
