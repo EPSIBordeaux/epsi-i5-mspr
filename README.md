@@ -9,4 +9,9 @@
 - [Sous Windows](https://openclassrooms.com/fr/courses/1617396-redigez-des-documents-de-qualite-avec-latex/1617747-installer-latex)
 - [Sous Linux](http://milq.github.io/install-latex-ubuntu-debian/)
 
-[Tutorial](https://www.latex-tutorial.com/tutorials/)
+[Tutorial](https://www.latex-tutorial.com/tutorials/
+
+## Compilation
+
+- Avec un éditeur Latex (TexStudio, ...)
+- `make` avec le Makefile
