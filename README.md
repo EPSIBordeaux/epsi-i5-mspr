@@ -11,6 +11,8 @@
 
 [Tutorial](https://www.latex-tutorial.com/tutorials/)
 
+Il est aussi nécessaire d'installer `make` et `python-pygments`
+
 ## Compilation
 
 - Avec un éditeur Latex (TexStudio, ...)
